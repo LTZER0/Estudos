@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blocos {
+    margin: 10%;
+    display: grid;
+    grid-template-columns: repeat(6, max-content);
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 5rem;
+}
+
+#secblocos {
+    background-color: whitesmoke;
+    margin: 5rem 0;
+}
+
+.bloco {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    &:hover {
+        border: 2px solid orange;
+        padding: 9px;
+        cursor: pointer;
+        transform: scale(1.05);
+        transform: translateY(-4px);
+        z-index: 2;
+    }
+}
+
+.bloco img {
+    width: 150px;
+    height: 200px;
+}
+h3 {
+    color: red;
+}
+
+h6 {
+    color: grey;
+}
+
+h2 {
+    font-weight: 100;
+}
+
+.promocoes {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 200px 200px;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem 13% 0;
+    gap: 10px;
+
+}
+
+.promocoes img:first-child {
+    grid-row: span 2; 
+}
+
+.promocoes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: 1px solid orange;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+li {
+    list-style: none;
+}
+
+.lista {
+    padding: 10px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(211, 101, 54);
+    padding: 10px;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+.pesquisa {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoes {
+    display: flex;
+    gap: 5rem;
+}
+
+form {
+    display: flex;
+}
+
+input {
+    width: 50rem;
+    height: 3rem;
+}
+
+button {
+    background-color: white;
+    border: none;width: 4rem;
+    height: 2.9rem;
+
+    cursor: pointer;
+}
